@@ -4,8 +4,8 @@ import ContactNotifyEmail from '@/emails/ContactNotifyEmail'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-const FROM_EMAIL = process.env.FROM_EMAIL || 'noreply@suatancn.com'
-const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || 'sales@suatancn.com'
+const FROM_EMAIL = process.env.FROM_EMAIL || 'Suất Ăn Công Nghiệp <onboarding@resend.dev>'
+const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL || 'bylle2002@gmail.com'
 
 interface QuoteData {
   companyName: string

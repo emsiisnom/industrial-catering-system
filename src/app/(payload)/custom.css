@@ -1,0 +1,33 @@
+/* ============================================================
+   Payload CMS Admin Custom Styles for Vietnamese Typography
+   ============================================================ */
+
+:root {
+  --font-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Lexical Editor Text Rendering */
+.lexical-theme,
+[contenteditable="true"],
+.LexicalEditorTheme__root,
+.LexicalEditorTheme__paragraph,
+.LexicalEditorTheme__heading-h1,
+.LexicalEditorTheme__heading-h2,
+.LexicalEditorTheme__heading-h3,
+.LexicalEditorTheme__heading-h4,
+.LexicalEditorTheme__heading-h5,
+.LexicalEditorTheme__heading-h6,
+.LexicalEditorTheme__list-item {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-feature-settings: normal !important;
+  letter-spacing: normal !important;
+  line-height: 1.7 !important;
+}
+
+/* Improve contrast and spacing in admin editor */
+.rich-text-lexical [contenteditable="true"] {
+  min-height: 280px;
+  padding: 1rem 1.25rem !important;
+  font-size: 15px !important;
+}

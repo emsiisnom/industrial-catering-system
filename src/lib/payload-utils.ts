@@ -102,6 +102,14 @@ export async function saveFormSubmission(data: {
   contactPerson?: string
   email?: string
   phone?: string
+  address?: string
+  subject?: string
+  message?: string
+  mealCount?: number
+  mealType?: string
+  startDate?: string
+  duration?: string
+  requirements?: string
   data: Record<string, unknown>
 }) {
   try {
@@ -115,6 +123,14 @@ export async function saveFormSubmission(data: {
         contactPerson: data.contactPerson,
         email: data.email,
         phone: data.phone,
+        address: data.address,
+        subject: data.subject,
+        message: data.message,
+        mealCount: data.mealCount,
+        mealType: data.mealType,
+        startDate: data.startDate,
+        duration: data.duration,
+        requirements: data.requirements,
         data: data.data,
       },
     })

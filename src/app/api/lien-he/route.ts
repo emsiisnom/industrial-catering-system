@@ -17,6 +17,8 @@ export async function POST(req: NextRequest) {
         contactPerson: validatedData.name,
         email: validatedData.email,
         phone: validatedData.phone,
+        subject: validatedData.subject,
+        message: validatedData.message,
         data: validatedData as unknown as Record<string, unknown>,
       })
     } catch (dbErr) {

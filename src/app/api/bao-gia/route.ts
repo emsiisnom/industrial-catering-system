@@ -19,6 +19,12 @@ export async function POST(req: NextRequest) {
         contactPerson: validatedData.contactPerson,
         email: validatedData.email,
         phone: validatedData.phone,
+        address: validatedData.address,
+        mealCount: validatedData.mealCount,
+        mealType: validatedData.mealType,
+        startDate: validatedData.startDate,
+        duration: validatedData.duration,
+        requirements: validatedData.requirements,
         data: validatedData as unknown as Record<string, unknown>,
       })
     } catch (dbErr) {
